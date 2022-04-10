@@ -17,7 +17,7 @@ struct ChampionData: Codable {
     let name: String
     let title: String
     let image: Image
-    let skins: [Skins]
+    var skins: [Skins]
     let lore: String
     let blurb: String
     let allytips: [String]
@@ -37,6 +37,7 @@ struct Image: Codable {
 struct Skins: Codable {
     let id: String
     let name: String
+    let num: Int
     
 }// End of struct
 

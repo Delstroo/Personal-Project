@@ -16,6 +16,8 @@ class ChampionDetailsViewController: UIViewController {
     var stat: [ChampionStatsArray] = []
     var championData: ChampionData?
     var spells: Spells?
+    var skin: Skins?
+    var skins: [Skins] = []
     var statNameArray: [String?] = []
     var statNumberArray: [String] = []
     
@@ -46,7 +48,8 @@ class ChampionDetailsViewController: UIViewController {
         blurEffectView.frame = self.view.frame
         view.insertSubview(blurEffectView, at: 0)
         view.backgroundColor = UIColor.clear
-
+        fetchChampionSkins()
+        
     }//end of func
     
     //MARK: - Action
@@ -54,16 +57,30 @@ class ChampionDetailsViewController: UIViewController {
     }
     @IBAction func buttonPressed(_ sender: Any) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-       guard let viewController = storyboard.instantiateViewController(withIdentifier: "championAbilitiesVC") as? ChampionAbilitiesViewController else { return }
+        guard let viewController = storyboard.instantiateViewController(withIdentifier: "championAbilitiesVC") as? ChampionAbilitiesViewController else { return }
         
         viewController.champion = championData
-               
-               if let presentationController = viewController.presentationController as? UISheetPresentationController {
-                   presentationController.detents = [.medium(), .large()] /// change to [.medium(), .large()] for a half *and* full screen sheet
-               }
         
-               self.present(viewController, animated: true)
-           }//End of func
+        if let presentationController = viewController.presentationController as? UISheetPresentationController {
+            presentationController.detents = [.medium(), .large()] /// change to [.medium(), .large()] for a half *and* full screen sheet
+        }
+        
+        self.present(viewController, animated: true)
+    }//End of func
+    @IBAction func skinsButtonTapped(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        guard let viewController = storyboard.instantiateViewController(withIdentifier: "toSkinsVC") as? ChampionSkinSplashCollectionViewController else { return }
+        
+        viewController.character = championData
+        
+        if let presentationController = viewController.presentationController as? UISheetPresentationController {
+            presentationController.detents = [.large()] /// change to [.medium(), .large()] for a half *and* full screen sheet
+        }
+        
+        self.present(viewController, animated: true)
+        
+        //toSkinsVC
+    }
     
     //MARK: - Helper Funcs
     func updateViews() {
@@ -76,7 +93,7 @@ class ChampionDetailsViewController: UIViewController {
         titleLabel.text = champions.title
         blurbLabel.text = championData.lore
         loreLabel.underline()
-
+        
         
         ChampionController.fetchImageFor(championInfo: champions) { result in
             DispatchQueue.main.async {
@@ -106,6 +123,21 @@ class ChampionDetailsViewController: UIViewController {
             }
         }
     }//End of func
+    
+    func fetchChampionSkins() {
+        ChampionController.fetchSkinSplashesFor(championName: champion?.name ?? "", skinNumber: skins.count) {
+            result in
+            DispatchQueue.main.async {
+                switch result {
+                case .success(_):
+                    self.updateViews()
+                    
+                case .failure(let error): break
+                    print("Error in \(#function) : \(error.localizedDescription) \n---\n \(error)")
+                }
+            }
+        }
+    }
     
     func colorGradient() {
         

@@ -40,6 +40,8 @@
 		FCCCEC2227B749CA00FD98AE /* ChampionAbilitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCCEC2127B749CA00FD98AE /* ChampionAbilitiesViewController.swift */; };
 		FCEAA1322714E1A300856DF0 /* ChampionStatArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEAA1312714E1A300856DF0 /* ChampionStatArray.swift */; };
 		FCEAA1342714E57100856DF0 /* ChampionStatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEAA1332714E57100856DF0 /* ChampionStatTableViewCell.swift */; };
+		FCF034EF27FFF2A8000F23C9 /* ChampionSkinSplashCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF034EE27FFF2A8000F23C9 /* ChampionSkinSplashCollectionViewController.swift */; };
+		FCF034F127FFF35B000F23C9 /* ChampionSkinCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF034F027FFF35B000F23C9 /* ChampionSkinCollectionViewCell.swift */; };
 		FCFEA69226D5FFC0002D11EF /* ChampionModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFEA69126D5FFC0002D11EF /* ChampionModels.swift */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +81,8 @@
 		FCCCEC2127B749CA00FD98AE /* ChampionAbilitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionAbilitiesViewController.swift; sourceTree = "<group>"; };
 		FCEAA1312714E1A300856DF0 /* ChampionStatArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionStatArray.swift; sourceTree = "<group>"; };
 		FCEAA1332714E57100856DF0 /* ChampionStatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionStatTableViewCell.swift; sourceTree = "<group>"; };
+		FCF034EE27FFF2A8000F23C9 /* ChampionSkinSplashCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionSkinSplashCollectionViewController.swift; sourceTree = "<group>"; };
+		FCF034F027FFF35B000F23C9 /* ChampionSkinCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionSkinCollectionViewCell.swift; sourceTree = "<group>"; };
 		FCFEA69126D5FFC0002D11EF /* ChampionModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionModels.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -213,6 +217,7 @@
 				FC206521270F625A00205136 /* ChampionTableViewCell.swift */,
 				FCEAA1332714E57100856DF0 /* ChampionStatTableViewCell.swift */,
 				FC30E52F27B37E8B0077749F /* ChampionSelectionCollectionViewCell.swift */,
+				FCF034F027FFF35B000F23C9 /* ChampionSkinCollectionViewCell.swift */,
 			);
 			path = CustomCells;
 			sourceTree = "<group>";
@@ -234,6 +239,7 @@
 				FCCCEC2127B749CA00FD98AE /* ChampionAbilitiesViewController.swift */,
 				FC27E1F626E02E4400F96B0F /* ChampionStatsViewController.swift */,
 				FC30E52D27B37C360077749F /* ChampionSelectionViewController.swift */,
+				FCF034EE27FFF2A8000F23C9 /* ChampionSkinSplashCollectionViewController.swift */,
 			);
 			path = Champions;
 			sourceTree = "<group>";
@@ -330,8 +336,10 @@
 				FCB1F98126D307470046E7DA /* ItemsModels.swift in Sources */,
 				FCB1F97926D305760046E7DA /* FirstSelectorViewController.swift in Sources */,
 				FC976D4027B59BE500400ED2 /* ViewControllerTest.swift in Sources */,
+				FCF034F127FFF35B000F23C9 /* ChampionSkinCollectionViewCell.swift in Sources */,
 				FC206520270F610800205136 /* ChampionsTableViewController.swift in Sources */,
 				FC27E20926E27A7D00F96B0F /* BuildsTableViewController.swift in Sources */,
+				FCF034EF27FFF2A8000F23C9 /* ChampionSkinSplashCollectionViewController.swift in Sources */,
 				FC206522270F625A00205136 /* ChampionTableViewCell.swift in Sources */,
 				FCB1F98526D31D470046E7DA /* ChampionDetailsViewController.swift in Sources */,
 				FC27E20F26EAA7B400F96B0F /* BuildModels.swift in Sources */,

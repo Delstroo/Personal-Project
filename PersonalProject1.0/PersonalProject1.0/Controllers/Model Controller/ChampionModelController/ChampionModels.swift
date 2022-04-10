@@ -124,6 +124,28 @@ class ChampionController {
             }.resume()
         }
     
+    static func fetchSkinSplashesFor(championName: String, skinNumber: Int, completion: @escaping(Result<UIImage, ChampionError>) -> Void) {
+        
+        guard let baseURL = URL(string: "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/") else { return completion(.failure(.invalidURL)) }
+        
+        let finalURL = baseURL.appendingPathComponent("\(championName)_\(skinNumber).jpg")
+        
+        print(finalURL)
+        
+        URLSession.shared.dataTask(with: finalURL) { data, _, error in
+            
+            if let error = error {
+                return completion(.failure(.throwError(error)))
+                
+            }
+            
+            guard let data = data else { return completion(.failure(.noData)) }
+            
+            guard let image = UIImage(data: data) else { return completion(.failure(.unableToDecode)) }
+            completion(.success(image))
+        }.resume()
+    }
+    
     static func fetchImageFor(championInfo: ChampionInfo, completion: @escaping(Result<UIImage, ChampionError>) -> Void) {
         
         guard let baseURL = URL(string: "https://ddragon.leagueoflegends.com/cdn/11.16.1/img/champion/") else { return completion(.failure(.invalidURL)) }

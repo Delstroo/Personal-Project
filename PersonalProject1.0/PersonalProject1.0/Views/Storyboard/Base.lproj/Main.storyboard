@@ -149,7 +149,7 @@
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fqN-cJ-oC2">
                                             <rect key="frame" x="157" y="21" width="100" height="100"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="100" id="So4-U5-NY9"/>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="So4-U5-NY9"/>
                                                 <constraint firstAttribute="height" constant="100" id="z5y-cM-CLX"/>
                                             </constraints>
                                             <state key="normal" title="Button"/>
@@ -421,7 +421,7 @@
             </objects>
             <point key="canvasLocation" x="4336" y="-849"/>
         </scene>
-        <!--Champions-->
+        <!--Champions Table View Controller-->
         <scene sceneID="0JP-fJ-GE9">
             <objects>
                 <tableViewController storyboardIdentifier="championTV" id="3t0-bh-Mme" customClass="ChampionsTableViewController" customModule="PersonalProject1_0" customModuleProvider="target" sceneMemberID="viewController">
@@ -478,7 +478,7 @@
                                     <outlet property="championImage" destination="KcJ-6v-GRd" id="jGw-XZ-WZn"/>
                                     <outlet property="championNameLabel" destination="5y0-7w-WXM" id="IVP-IJ-JVI"/>
                                     <outlet property="championTitleLabel" destination="rG8-XP-Xn8" id="88o-DK-j52"/>
-                                    <segue destination="mWb-NQ-jW6" kind="show" identifier="toDetailVC" id="5Rq-Cp-H4g"/>
+                                    <segue destination="mWb-NQ-jW6" kind="show" identifier="toDetailVC" id="jzh-6I-hO8"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -487,11 +487,6 @@
                             <outlet property="delegate" destination="3t0-bh-Mme" id="IPo-U3-Jcu"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Champions" image="2883637_30x30" springLoaded="YES" id="rXG-s1-A62">
-                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <imageReference key="selectedImage" image="2883637_30x30" symbolScale="large"/>
-                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
-                    </tabBarItem>
                     <navigationItem key="navigationItem" id="Paf-EC-nwU"/>
                     <connections>
                         <outlet property="championSearchBar" destination="E3U-d1-Sy6" id="BgV-bb-CoM"/>
@@ -499,7 +494,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ayN-cj-5Y4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2657" y="-1747"/>
+            <point key="canvasLocation" x="3566.666666666667" y="-1747.0982142857142"/>
         </scene>
         <!--Champion Stats View Controller-->
         <scene sceneID="XTJ-6H-o3S">
@@ -803,7 +798,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MuY-Pa-mKc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4335" y="-1747"/>
+            <point key="canvasLocation" x="5244.9275362318849" y="-1747.0982142857142"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="kBQ-qy-ONn">
@@ -816,7 +811,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="3t0-bh-Mme" kind="relationship" relationship="viewControllers" id="4rF-4f-n6F"/>
+                        <segue destination="Un1-wy-WfE" kind="relationship" relationship="viewControllers" id="4rF-4f-n6F"/>
                         <segue destination="6lb-yr-3ku" kind="relationship" relationship="viewControllers" id="xjz-W9-was"/>
                         <segue destination="EXr-cC-wma" kind="relationship" relationship="viewControllers" id="YyX-mW-Cb7"/>
                     </connections>
@@ -921,16 +916,16 @@
         <!--Champion Details View Controller-->
         <scene sceneID="zGy-ki-9oB">
             <objects>
-                <viewController id="mWb-NQ-jW6" customClass="ChampionDetailsViewController" customModule="PersonalProject1_0" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="mWb-NQ-jW6" customClass="ChampionDetailsViewController" customModule="PersonalProject1_0" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="G14-wR-rqU">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YYt-qw-kDx">
-                                <rect key="frame" x="0.0" y="-10" width="414" height="852"/>
+                                <rect key="frame" x="0.0" y="78" width="414" height="818"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="oFL-hN-2iM">
-                                        <rect key="frame" x="18" y="10" width="378" height="457"/>
+                                        <rect key="frame" x="18" y="10" width="378" height="518"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="4WZ-M8-dTj">
                                                 <rect key="frame" x="0.0" y="0.0" width="378" height="175"/>
@@ -981,31 +976,44 @@
                                                     </label>
                                                 </subviews>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="XKV-ec-lQz">
-                                                <rect key="frame" x="0.0" y="422" width="378" height="35"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="8gV-Xd-8l8">
+                                                <rect key="frame" x="0.0" y="422" width="378" height="96"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VeJ-xY-eXl">
-                                                        <rect key="frame" x="0.0" y="0.0" width="179" height="35"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="35" id="iMn-JU-Gcn"/>
-                                                        </constraints>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="XKV-ec-lQz">
+                                                        <rect key="frame" x="0.0" y="0.0" width="378" height="35"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VeJ-xY-eXl">
+                                                                <rect key="frame" x="0.0" y="0.0" width="179" height="35"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="35" id="iMn-JU-Gcn"/>
+                                                                </constraints>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="Champion Stats"/>
+                                                                <connections>
+                                                                    <action selector="statsButtonTapped:" destination="mWb-NQ-jW6" eventType="touchUpInside" id="OeL-64-Tlw"/>
+                                                                    <segue destination="DMa-nO-GNt" kind="presentation" identifier="statsVC" id="HAh-q9-bXW"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wcg-Y6-l9L">
+                                                                <rect key="frame" x="199" y="0.0" width="179" height="35"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="Ir9-aA-egY"/>
+                                                                    <constraint firstAttribute="height" constant="35" id="Odh-wl-oyw"/>
+                                                                </constraints>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="Champion Abilities"/>
+                                                                <connections>
+                                                                    <action selector="buttonPressed:" destination="mWb-NQ-jW6" eventType="touchUpInside" id="PUK-DR-qSa"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EEC-gA-35F">
+                                                        <rect key="frame" x="0.0" y="65" width="378" height="31"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" title="Champion Stats"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Champion Skins"/>
                                                         <connections>
-                                                            <action selector="statsButtonTapped:" destination="mWb-NQ-jW6" eventType="touchUpInside" id="OeL-64-Tlw"/>
-                                                            <segue destination="DMa-nO-GNt" kind="show" identifier="statsVC" id="HAh-q9-bXW"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wcg-Y6-l9L">
-                                                        <rect key="frame" x="199" y="0.0" width="179" height="35"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="Ir9-aA-egY"/>
-                                                            <constraint firstAttribute="height" constant="35" id="Odh-wl-oyw"/>
-                                                        </constraints>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" title="Champion Abilities"/>
-                                                        <connections>
-                                                            <action selector="buttonPressed:" destination="mWb-NQ-jW6" eventType="touchUpInside" id="PUK-DR-qSa"/>
+                                                            <action selector="skinsButtonTapped:" destination="mWb-NQ-jW6" eventType="touchUpInside" id="gFe-1e-YuE"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -1047,7 +1055,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5wf-J3-NmY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3479.7101449275365" y="-1747.0982142857142"/>
+            <point key="canvasLocation" x="4389.855072463768" y="-1747.0982142857142"/>
         </scene>
         <!--Champion Abilities View Controller-->
         <scene sceneID="3h9-5s-G89">
@@ -1280,6 +1288,89 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G8f-bU-geJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3479.7101449275365" y="-2459.5982142857142"/>
+        </scene>
+        <!--Champion Skin Splash Collection View Controller-->
+        <scene sceneID="yaK-ZF-rgO">
+            <objects>
+                <collectionViewController storyboardIdentifier="toSkinsVC" id="uu1-bd-6FB" customClass="ChampionSkinSplashCollectionViewController" customModule="PersonalProject1_0" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="9sI-uh-GMU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Tx3-f6-Qbp">
+                            <size key="itemSize" width="213" height="219"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="skinCell" id="B1L-SF-aFc" customClass="ChampionSkinCollectionViewCell" customModule="PersonalProject1_0" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="213" height="219"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="VZf-u7-NdK">
+                                    <rect key="frame" x="0.0" y="0.0" width="213" height="219"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QnA-ea-LmU">
+                                            <rect key="frame" x="0.0" y="198.5" width="213" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7Kf-3T-KqV">
+                                            <rect key="frame" x="0.0" y="0.0" width="213" height="193.5"/>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="7Kf-3T-KqV" secondAttribute="trailing" id="Jap-Xl-7xJ"/>
+                                        <constraint firstItem="7Kf-3T-KqV" firstAttribute="leading" secondItem="VZf-u7-NdK" secondAttribute="leading" id="KLf-rT-ZfU"/>
+                                        <constraint firstAttribute="bottom" secondItem="QnA-ea-LmU" secondAttribute="bottom" id="fLg-MV-gGN"/>
+                                        <constraint firstAttribute="trailing" secondItem="QnA-ea-LmU" secondAttribute="trailing" id="lLw-PY-Ynb"/>
+                                        <constraint firstItem="7Kf-3T-KqV" firstAttribute="top" secondItem="VZf-u7-NdK" secondAttribute="top" id="oPT-Jo-MZt"/>
+                                        <constraint firstItem="QnA-ea-LmU" firstAttribute="leading" secondItem="VZf-u7-NdK" secondAttribute="leading" id="p2G-lz-FjL"/>
+                                        <constraint firstItem="QnA-ea-LmU" firstAttribute="top" secondItem="7Kf-3T-KqV" secondAttribute="bottom" constant="5" id="tOj-It-suB"/>
+                                    </constraints>
+                                </collectionViewCellContentView>
+                                <size key="customSize" width="213" height="219"/>
+                                <connections>
+                                    <outlet property="skinImageView" destination="7Kf-3T-KqV" id="19m-NW-h5F"/>
+                                    <outlet property="skinNameImageView" destination="QnA-ea-LmU" id="QxP-Kg-DBw"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="uu1-bd-6FB" id="kIw-Qs-Wbu"/>
+                            <outlet property="delegate" destination="uu1-bd-6FB" id="GWE-zB-ska"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="gZ2-vc-ljR"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GRb-t9-u0y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4334.7826086956529" y="-2425.4464285714284"/>
+        </scene>
+        <!--Champions-->
+        <scene sceneID="zI5-Nr-Vca">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Un1-wy-WfE" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Champions" image="2883637_30x30" springLoaded="YES" id="rXG-s1-A62">
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <imageReference key="selectedImage" image="2883637_30x30" symbolScale="large"/>
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="SN3-KD-5rg">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="3t0-bh-Mme" kind="relationship" relationship="rootViewController" id="bLz-gf-DPU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5g-fK-Dz4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2656.521739130435" y="-1747.0982142857142"/>
         </scene>
     </scenes>
     <resources>

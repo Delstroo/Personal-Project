@@ -7,16 +7,156 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "BCBFAB47-2EC7-4EAD-91B7-244DCDF65617"
+            uuid = "3FBDFA2D-88AF-44FD-8B59-B3C3F685CEF8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PersonalProject1.0/Views/CustomCells/ChampionSkinCollectionViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "skin"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "3FBDFA2D-88AF-44FD-8B59-B3C3F685CEF8 - f6d91d7f6b704251"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PersonalProject1_0.ChampionSkinCollectionViewCell.skin.getter : Swift.Optional&lt;PersonalProject1_0.Skins&gt;"
+                  moduleName = "PersonalProject1.0"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/delstun/Documents/week%206/PersonalProject1.0/PersonalProject1.0/Views/CustomCells/ChampionSkinCollectionViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "144">
+               </Location>
+               <Location
+                  uuid = "3FBDFA2D-88AF-44FD-8B59-B3C3F685CEF8 - b9b577b811da665d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PersonalProject1_0.ChampionSkinCollectionViewCell.skin.setter : Swift.Optional&lt;PersonalProject1_0.Skins&gt;"
+                  moduleName = "PersonalProject1.0"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/delstun/Documents/week%206/PersonalProject1.0/PersonalProject1.0/Views/CustomCells/ChampionSkinCollectionViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "168">
+               </Location>
+               <Location
+                  uuid = "3FBDFA2D-88AF-44FD-8B59-B3C3F685CEF8 - ee33abf952b0f5b9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PersonalProject1_0.ChampionSkinCollectionViewCell.skin.modify : Swift.Optional&lt;PersonalProject1_0.Skins&gt;"
+                  moduleName = "PersonalProject1.0"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/delstun/Documents/week%206/PersonalProject1.0/PersonalProject1.0/Views/CustomCells/ChampionSkinCollectionViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "3FBDFA2D-88AF-44FD-8B59-B3C3F685CEF8 - de915384f6b033e2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PersonalProject1_0.ChampionSkinCollectionViewCell.skin.modify : Swift.Optional&lt;PersonalProject1_0.Skins&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "PersonalProject1.0"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/delstun/Documents/week%206/PersonalProject1.0/PersonalProject1.0/Views/CustomCells/ChampionSkinCollectionViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "3FBDFA2D-88AF-44FD-8B59-B3C3F685CEF8 - 9e7e1ed34b2b53ce"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PersonalProject1_0.ChampionSkinCollectionViewCell.init(frame: __C.CGRect) -&gt; PersonalProject1_0.ChampionSkinCollectionViewCell"
+                  moduleName = "PersonalProject1.0"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/delstun/Documents/week%206/PersonalProject1.0/PersonalProject1.0/Views/CustomCells/ChampionSkinCollectionViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "272">
+               </Location>
+               <Location
+                  uuid = "3FBDFA2D-88AF-44FD-8B59-B3C3F685CEF8 - 68b0c94e8356167c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PersonalProject1_0.ChampionSkinCollectionViewCell.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;PersonalProject1_0.ChampionSkinCollectionViewCell&gt;"
+                  moduleName = "PersonalProject1.0"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/delstun/Documents/week%206/PersonalProject1.0/PersonalProject1.0/Views/CustomCells/ChampionSkinCollectionViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "244">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AECAF8F9-B9DF-4365-8858-4BF2ADBF18D1"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PersonalProject1.0/Controllers/View Controller/Champions/ChampionSkinSplashCollectionViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "collectionView(_:cellForItemAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A5718A52-4233-4B74-9A3C-EB5CE79D33AD"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PersonalProject1.0/Views/CustomCells/ChampionSkinCollectionViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "updateViews()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1505D55E-B10F-4C7B-94DE-C5C68FFCF9A5"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PersonalProject1.0/Controllers/View Controller/Champions/ChampionDetailsViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39"
-            landmarkName = "viewDidLoad()"
+            startingLineNumber = "127"
+            endingLineNumber = "127"
+            landmarkName = "fetchChampionSkins()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
