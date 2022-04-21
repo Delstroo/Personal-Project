@@ -13,7 +13,7 @@ class ChampionSkinCollectionViewCell: UICollectionViewCell {
     @IBOutlet var skinNameImageView: UILabel!
     
     var character: ChampionData?
-
+    
     var skin: Skins? {
         didSet {
             updateViews()
@@ -24,17 +24,18 @@ class ChampionSkinCollectionViewCell: UICollectionViewCell {
     
     func updateViews() {
         guard let skin = skin else { return }
-        
+        skinNameImageView.text = skin.name
         
         ChampionController.fetchSkinSplashesFor(championName: character?.name ?? "", skinNumber: skin.num) { result in
-            switch result {
-            case .success(let image):
-                self.skinImageView.image = image
-                self.skinImageView.layer.cornerRadius = self.frame.height / 2.0
-            case .failure(_):
-                self.skinImageView.image = UIImage(systemName: "square")
+            DispatchQueue.main.async {
+                switch result {
+                case .success(let image):
+                    self.skinImageView.image = image
+                    self.skinImageView.layer.cornerRadius = 20
+                case .failure(_):
+                    self.skinImageView.image = UIImage(systemName: "square")
+                }
             }
         }
     }
-    
 }
